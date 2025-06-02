@@ -1,10 +1,10 @@
 -- =====================
 -- CREAR TABLAS
 -- =====================
-
-DROP TABLE IF EXISTS traza_ejecucion;
-DROP TABLE IF EXISTS programa;
-DROP TABLE IF EXISTS alfabeto;
+--Al crear una base nueva no necesitamos eliminar las tablas, ya que no existen.
+--DROP TABLE IF EXISTS traza_ejecucion;
+--DROP TABLE IF EXISTS programa;
+--DROP TABLE IF EXISTS alfabeto;
 
 CREATE TABLE alfabeto (
     simbolo TEXT PRIMARY KEY

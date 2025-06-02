@@ -20,9 +20,9 @@ CREATE DATABASE tp_maquina_turing;
 
 --Deberia ir un menu de opciones para saber cual ejecutar
 
-\i Programa_Palindromo.sql
-SELECT simuladorMT('1001');
-SELECT * FROM get_descripciones();
+--\i Programa_Palindromo.sql
+--SELECT simuladorMT('1001');
+--SELECT * FROM get_descripciones();
 
 
 -- ================================
