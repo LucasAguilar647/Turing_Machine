@@ -17,6 +17,7 @@ CREATE DATABASE tp_maquina_turing;
 
 \i Crear_Tablas.sql
 \i Funciones.sql
+\i Ver_Movimientos.sql
 
 --Deberia ir un menu de opciones para saber cual ejecutar
 
