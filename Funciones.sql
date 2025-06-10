@@ -1,8 +1,4 @@
 
--- =====================
--- FUNCION: simuladorMT
--- =====================
-
 CREATE OR REPLACE FUNCTION simuladorMT(entrada TEXT)
 RETURNS VOID AS $$
 DECLARE
@@ -83,9 +79,8 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
--- =====================
--- FUNCION: get_descripciones
--- =====================
+
+
 
 CREATE OR REPLACE FUNCTION get_descripciones()
 RETURNS TABLE (

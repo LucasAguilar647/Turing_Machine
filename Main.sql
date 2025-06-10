@@ -1,8 +1,7 @@
-
--- MAIN - TP MÁQUINA DE TURING 
--- Ejecutar esto desde psql conectado a la base "postgres"
---psql -U postgres -d postgres -h localhost -p 8080 -f main.sql
-
+-- ====================================
+-- MAIN - TP MÁQUINA DE TURING
+-- Ejecutar esto desde psql conectado a la base "postgres":
+-- psql -U postgres -d postgres -h localhost -p 8080 -f main.sql
 -- ====================================
 
 
@@ -19,12 +18,23 @@ CREATE DATABASE tp_maquina_turing;
 \i Funciones.sql
 
 
---Deberia ir un menu de opciones para saber cual ejecutar
 
-\i Programa_Palindromo.sql
-SELECT simuladorMT('10101');
+
+-- \i Programa_Inversor_Completo.sql
+-- SELECT simuladorMT('aguilar');
+
+
+-- \i Programa_Palindromo.sql
+-- SELECT simuladorMT('1001001');
+
+
+-- \i Programa_invertir_string.sql
+-- SELECT simuladorMT('cbacbacba');
+
+
+
+
 SELECT * FROM get_descripciones();
 
+
 \i Ver_Movimientos.sql
-
-
