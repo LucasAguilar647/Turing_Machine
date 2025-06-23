@@ -9,14 +9,14 @@ DECLARE
     transicion RECORD;
     halt BOOLEAN := FALSE;
 BEGIN
-    -- Validar que todos los símbolos estén en el alfabeto
+    
     FOR simbolo_actual IN SELECT unnest(cinta) LOOP
         IF NOT EXISTS (SELECT 1 FROM alfabeto WHERE simbolo = simbolo_actual) THEN
             RAISE EXCEPTION 'Carácter inválido en la entrada: %', simbolo_actual;
         END IF;
     END LOOP;
 
-    -- Limpiar la traza anterior
+    
     DELETE FROM traza_ejecucion;
 
     LOOP
@@ -24,15 +24,15 @@ BEGIN
 
         IF posicion < 1 THEN
             cinta := array_prepend('B', cinta);
-            posicion := posicion + 1; -- corregir desplazamiento
+            posicion := posicion + 1;
         ELSIF posicion > array_length(cinta, 1) THEN
             cinta := array_append(cinta, 'B');
         END IF;
 
-        -- Leer símbolo actual
+       
         simbolo_actual := cinta[posicion];
 
-        -- Buscar transición
+       
         SELECT * INTO transicion
         FROM programa
         WHERE estado_ori = estado AND caracter_ori = simbolo_actual
@@ -41,7 +41,7 @@ BEGIN
         IF NOT FOUND THEN
             halt := TRUE;
         ELSE
-            -- Aplicar transición
+            
             cinta[posicion] := transicion.caracter_nue;
             estado := transicion.estado_nue;
 
@@ -59,7 +59,7 @@ BEGIN
             cinta := array_append(cinta, 'B');
         END IF;
 
-        -- Registrar paso
+       
         INSERT INTO traza_ejecucion (
             estado_actual,
             posicion_cabezal,
@@ -80,7 +80,7 @@ BEGIN
             halt
         );
 
-        -- Si no hay más transición, detener ejecución
+       
         IF halt THEN
             EXIT;
         END IF;

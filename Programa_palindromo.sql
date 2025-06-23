@@ -6,7 +6,7 @@ DELETE FROM programa;
 
 
 INSERT INTO programa VALUES
--- MARCO EL 0 Y VOY AL ULTIMO
+
 ('q0', '0', 'q_check0', 'X', 'R'),
 -- MARCO EL 1 Y VOY AL ULTIMO
 ('q0', '1', 'q_check1', 'X', 'R'),
