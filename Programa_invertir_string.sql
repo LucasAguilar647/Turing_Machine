@@ -7,10 +7,10 @@ DELETE FROM programa;
 
 INSERT INTO programa VALUES
 
-('qB', 'a', 'qB', 'a', 'R'),
-('qB', 'b', 'qB', 'b', 'R'),
-('qB', 'c', 'qB', 'c', 'R'),
-('qB', 'B', 'load', 'B', 'L'), 
+('q0', 'a', 'q0', 'a', 'R'),
+('q0', 'b', 'q0', 'b', 'R'),
+('q0', 'c', 'q0', 'c', 'R'),
+('q0', 'B', 'load', 'B', 'L'), 
 
 
 ('load', 'a', 'load_a', 'X', 'R' ),
