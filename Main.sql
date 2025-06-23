@@ -20,16 +20,22 @@ CREATE DATABASE tp_maquina_turing;
 
 
 
--- \i Programa_Inversor_Completo.sql
--- SELECT simuladorMT('aguilar');
-
 
 -- \i Programa_Palindromo.sql
 -- SELECT simuladorMT('1001001');
 
+-- \i Multiplicar_binarios.sql
+-- SELECT simuladorMT('101#11');
+-- SELECT * FROM get_resultado_final();  
+
+-- \i Programa_ParesDuplicados.sql
+-- SELECT simuladorMT('aabbcczzkkaabbcczz');
 
 -- \i Programa_invertir_string.sql
 -- SELECT simuladorMT('cbacbacba');
+
+     
+
 
 
 
