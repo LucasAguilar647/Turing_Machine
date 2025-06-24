@@ -18,9 +18,6 @@ CREATE DATABASE tp_maquina_turing;
 \i Funciones.sql
 
 
-
-
-
 -- \i Programa_Palindromo.sql
 -- SELECT simuladorMT('1001001');
 
@@ -31,14 +28,12 @@ CREATE DATABASE tp_maquina_turing;
 -- \i Programa_ParesDuplicados.sql
 -- SELECT simuladorMT('aabbcczzkkaabbcczz');
 
+-- \i Programa_Inversor_Completo.sql
+-- SELECT simuladorMT('lucas');
+
 -- \i Programa_invertir_string.sql
 -- SELECT simuladorMT('cbacbacba');
-
-     
-
-
-
-
+    
 
 SELECT * FROM get_descripciones();
 
