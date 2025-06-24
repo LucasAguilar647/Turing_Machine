@@ -17,12 +17,17 @@ CREATE DATABASE tp_maquina_turing;
 \i Crear_Tablas.sql
 \i Funciones.sql
 
+\i Sumar_binarios.sql
+SELECT simuladorMT('10#1');
+SELECT * FROM get_resultado_final();
+SELECT simuladorMT('1#1');
+SELECT * FROM get_resultado_final();
 
 -- \i Programa_Palindromo.sql
 -- SELECT simuladorMT('1001001');
 
 -- \i Multiplicar_binarios.sql
--- SELECT simuladorMT('101#11');
+-- SELECT simuladorMT('1011#11');
 -- SELECT * FROM get_resultado_final();  
 
 -- \i Programa_ParesDuplicados.sql
