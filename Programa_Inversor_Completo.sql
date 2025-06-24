@@ -27,6 +27,7 @@ INSERT INTO alfabeto (simbolo) VALUES
 ('x'),
 ('y'),
 ('z'),
+(' '),
 ('X'),
 ('B');
 
@@ -59,6 +60,7 @@ INSERT INTO programa VALUES ('q0', 'w', 'q0', 'w', 'R');
 INSERT INTO programa VALUES ('q0', 'x', 'q0', 'x', 'R');
 INSERT INTO programa VALUES ('q0', 'y', 'q0', 'y', 'R');
 INSERT INTO programa VALUES ('q0', 'z', 'q0', 'z', 'R');
+INSERT INTO programa VALUES ('q0', ' ', 'q0', ' ', 'R');
 INSERT INTO programa VALUES ('q0', 'B', 'load', 'B', 'L');
 
 --AGARRA EL PRIMER VALOR A COPIAR (ULTIMO CARACTER);
@@ -88,6 +90,7 @@ INSERT INTO programa VALUES ('load', 'w', 'load_w', 'X', 'R');
 INSERT INTO programa VALUES ('load', 'x', 'load_x', 'X', 'R');
 INSERT INTO programa VALUES ('load', 'y', 'load_y', 'X', 'R');
 INSERT INTO programa VALUES ('load', 'z', 'load_z', 'X', 'R');
+INSERT INTO programa VALUES ('load', ' ', 'load_ ', 'X', 'R');
 INSERT INTO programa VALUES ('load', 'B', 'finish', 'B', 'L');
 
 --BUSCA EL PRIMER B DISPONIBLE Y PEGA EL VALOR;
@@ -117,6 +120,7 @@ INSERT INTO programa VALUES ('load_a', 'w', 'load_a', 'w', 'R');
 INSERT INTO programa VALUES ('load_a', 'x', 'load_a', 'x', 'R');
 INSERT INTO programa VALUES ('load_a', 'y', 'load_a', 'y', 'R');
 INSERT INTO programa VALUES ('load_a', 'z', 'load_a', 'z', 'R');
+INSERT INTO programa VALUES ('load_a', ' ', 'load_a', ' ', 'R');
 INSERT INTO programa VALUES ('load_a', 'X', 'load_a', 'X', 'R');
 INSERT INTO programa VALUES ('load_a', 'B', 'search_X', 'a', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -146,6 +150,7 @@ INSERT INTO programa VALUES ('load_b', 'w', 'load_b', 'w', 'R');
 INSERT INTO programa VALUES ('load_b', 'x', 'load_b', 'x', 'R');
 INSERT INTO programa VALUES ('load_b', 'y', 'load_b', 'y', 'R');
 INSERT INTO programa VALUES ('load_b', 'z', 'load_b', 'z', 'R');
+INSERT INTO programa VALUES ('load_b', ' ', 'load_b', ' ', 'R');
 INSERT INTO programa VALUES ('load_b', 'X', 'load_b', 'X', 'R');
 INSERT INTO programa VALUES ('load_b', 'B', 'search_X', 'b', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -175,6 +180,7 @@ INSERT INTO programa VALUES ('load_c', 'w', 'load_c', 'w', 'R');
 INSERT INTO programa VALUES ('load_c', 'x', 'load_c', 'x', 'R');
 INSERT INTO programa VALUES ('load_c', 'y', 'load_c', 'y', 'R');
 INSERT INTO programa VALUES ('load_c', 'z', 'load_c', 'z', 'R');
+INSERT INTO programa VALUES ('load_c', ' ', 'load_c', ' ', 'R');
 INSERT INTO programa VALUES ('load_c', 'X', 'load_c', 'X', 'R');
 INSERT INTO programa VALUES ('load_c', 'B', 'search_X', 'c', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -204,6 +210,7 @@ INSERT INTO programa VALUES ('load_d', 'w', 'load_d', 'w', 'R');
 INSERT INTO programa VALUES ('load_d', 'x', 'load_d', 'x', 'R');
 INSERT INTO programa VALUES ('load_d', 'y', 'load_d', 'y', 'R');
 INSERT INTO programa VALUES ('load_d', 'z', 'load_d', 'z', 'R');
+INSERT INTO programa VALUES ('load_d', ' ', 'load_d', ' ', 'R');
 INSERT INTO programa VALUES ('load_d', 'X', 'load_d', 'X', 'R');
 INSERT INTO programa VALUES ('load_d', 'B', 'search_X', 'd', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -233,6 +240,7 @@ INSERT INTO programa VALUES ('load_e', 'w', 'load_e', 'w', 'R');
 INSERT INTO programa VALUES ('load_e', 'x', 'load_e', 'x', 'R');
 INSERT INTO programa VALUES ('load_e', 'y', 'load_e', 'y', 'R');
 INSERT INTO programa VALUES ('load_e', 'z', 'load_e', 'z', 'R');
+INSERT INTO programa VALUES ('load_e', ' ', 'load_e', ' ', 'R');
 INSERT INTO programa VALUES ('load_e', 'X', 'load_e', 'X', 'R');
 INSERT INTO programa VALUES ('load_e', 'B', 'search_X', 'e', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -262,6 +270,7 @@ INSERT INTO programa VALUES ('load_f', 'w', 'load_f', 'w', 'R');
 INSERT INTO programa VALUES ('load_f', 'x', 'load_f', 'x', 'R');
 INSERT INTO programa VALUES ('load_f', 'y', 'load_f', 'y', 'R');
 INSERT INTO programa VALUES ('load_f', 'z', 'load_f', 'z', 'R');
+INSERT INTO programa VALUES ('load_f', ' ', 'load_f', ' ', 'R');
 INSERT INTO programa VALUES ('load_f', 'X', 'load_f', 'X', 'R');
 INSERT INTO programa VALUES ('load_f', 'B', 'search_X', 'f', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -291,6 +300,7 @@ INSERT INTO programa VALUES ('load_g', 'w', 'load_g', 'w', 'R');
 INSERT INTO programa VALUES ('load_g', 'x', 'load_g', 'x', 'R');
 INSERT INTO programa VALUES ('load_g', 'y', 'load_g', 'y', 'R');
 INSERT INTO programa VALUES ('load_g', 'z', 'load_g', 'z', 'R');
+INSERT INTO programa VALUES ('load_g', ' ', 'load_g', ' ', 'R');
 INSERT INTO programa VALUES ('load_g', 'X', 'load_g', 'X', 'R');
 INSERT INTO programa VALUES ('load_g', 'B', 'search_X', 'g', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -320,6 +330,7 @@ INSERT INTO programa VALUES ('load_h', 'w', 'load_h', 'w', 'R');
 INSERT INTO programa VALUES ('load_h', 'x', 'load_h', 'x', 'R');
 INSERT INTO programa VALUES ('load_h', 'y', 'load_h', 'y', 'R');
 INSERT INTO programa VALUES ('load_h', 'z', 'load_h', 'z', 'R');
+INSERT INTO programa VALUES ('load_h', ' ', 'load_h', ' ', 'R');
 INSERT INTO programa VALUES ('load_h', 'X', 'load_h', 'X', 'R');
 INSERT INTO programa VALUES ('load_h', 'B', 'search_X', 'h', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -349,6 +360,7 @@ INSERT INTO programa VALUES ('load_i', 'w', 'load_i', 'w', 'R');
 INSERT INTO programa VALUES ('load_i', 'x', 'load_i', 'x', 'R');
 INSERT INTO programa VALUES ('load_i', 'y', 'load_i', 'y', 'R');
 INSERT INTO programa VALUES ('load_i', 'z', 'load_i', 'z', 'R');
+INSERT INTO programa VALUES ('load_i', ' ', 'load_i', ' ', 'R');
 INSERT INTO programa VALUES ('load_i', 'X', 'load_i', 'X', 'R');
 INSERT INTO programa VALUES ('load_i', 'B', 'search_X', 'i', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -378,6 +390,7 @@ INSERT INTO programa VALUES ('load_j', 'w', 'load_j', 'w', 'R');
 INSERT INTO programa VALUES ('load_j', 'x', 'load_j', 'x', 'R');
 INSERT INTO programa VALUES ('load_j', 'y', 'load_j', 'y', 'R');
 INSERT INTO programa VALUES ('load_j', 'z', 'load_j', 'z', 'R');
+INSERT INTO programa VALUES ('load_j', ' ', 'load_j', ' ', 'R');
 INSERT INTO programa VALUES ('load_j', 'X', 'load_j', 'X', 'R');
 INSERT INTO programa VALUES ('load_j', 'B', 'search_X', 'j', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -407,6 +420,7 @@ INSERT INTO programa VALUES ('load_k', 'w', 'load_k', 'w', 'R');
 INSERT INTO programa VALUES ('load_k', 'x', 'load_k', 'x', 'R');
 INSERT INTO programa VALUES ('load_k', 'y', 'load_k', 'y', 'R');
 INSERT INTO programa VALUES ('load_k', 'z', 'load_k', 'z', 'R');
+INSERT INTO programa VALUES ('load_k', ' ', 'load_k', ' ', 'R');
 INSERT INTO programa VALUES ('load_k', 'X', 'load_k', 'X', 'R');
 INSERT INTO programa VALUES ('load_k', 'B', 'search_X', 'k', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -436,6 +450,7 @@ INSERT INTO programa VALUES ('load_l', 'w', 'load_l', 'w', 'R');
 INSERT INTO programa VALUES ('load_l', 'x', 'load_l', 'x', 'R');
 INSERT INTO programa VALUES ('load_l', 'y', 'load_l', 'y', 'R');
 INSERT INTO programa VALUES ('load_l', 'z', 'load_l', 'z', 'R');
+INSERT INTO programa VALUES ('load_l', ' ', 'load_l', ' ', 'R');
 INSERT INTO programa VALUES ('load_l', 'X', 'load_l', 'X', 'R');
 INSERT INTO programa VALUES ('load_l', 'B', 'search_X', 'l', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -465,6 +480,7 @@ INSERT INTO programa VALUES ('load_m', 'w', 'load_m', 'w', 'R');
 INSERT INTO programa VALUES ('load_m', 'x', 'load_m', 'x', 'R');
 INSERT INTO programa VALUES ('load_m', 'y', 'load_m', 'y', 'R');
 INSERT INTO programa VALUES ('load_m', 'z', 'load_m', 'z', 'R');
+INSERT INTO programa VALUES ('load_m', ' ', 'load_m', ' ', 'R');
 INSERT INTO programa VALUES ('load_m', 'X', 'load_m', 'X', 'R');
 INSERT INTO programa VALUES ('load_m', 'B', 'search_X', 'm', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -494,6 +510,7 @@ INSERT INTO programa VALUES ('load_n', 'w', 'load_n', 'w', 'R');
 INSERT INTO programa VALUES ('load_n', 'x', 'load_n', 'x', 'R');
 INSERT INTO programa VALUES ('load_n', 'y', 'load_n', 'y', 'R');
 INSERT INTO programa VALUES ('load_n', 'z', 'load_n', 'z', 'R');
+INSERT INTO programa VALUES ('load_n', ' ', 'load_n', ' ', 'R');
 INSERT INTO programa VALUES ('load_n', 'X', 'load_n', 'X', 'R');
 INSERT INTO programa VALUES ('load_n', 'B', 'search_X', 'n', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -523,6 +540,7 @@ INSERT INTO programa VALUES ('load_o', 'w', 'load_o', 'w', 'R');
 INSERT INTO programa VALUES ('load_o', 'x', 'load_o', 'x', 'R');
 INSERT INTO programa VALUES ('load_o', 'y', 'load_o', 'y', 'R');
 INSERT INTO programa VALUES ('load_o', 'z', 'load_o', 'z', 'R');
+INSERT INTO programa VALUES ('load_o', ' ', 'load_o', ' ', 'R');
 INSERT INTO programa VALUES ('load_o', 'X', 'load_o', 'X', 'R');
 INSERT INTO programa VALUES ('load_o', 'B', 'search_X', 'o', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -552,6 +570,7 @@ INSERT INTO programa VALUES ('load_p', 'w', 'load_p', 'w', 'R');
 INSERT INTO programa VALUES ('load_p', 'x', 'load_p', 'x', 'R');
 INSERT INTO programa VALUES ('load_p', 'y', 'load_p', 'y', 'R');
 INSERT INTO programa VALUES ('load_p', 'z', 'load_p', 'z', 'R');
+INSERT INTO programa VALUES ('load_p', ' ', 'load_p', ' ', 'R');
 INSERT INTO programa VALUES ('load_p', 'X', 'load_p', 'X', 'R');
 INSERT INTO programa VALUES ('load_p', 'B', 'search_X', 'p', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -581,6 +600,7 @@ INSERT INTO programa VALUES ('load_q', 'w', 'load_q', 'w', 'R');
 INSERT INTO programa VALUES ('load_q', 'x', 'load_q', 'x', 'R');
 INSERT INTO programa VALUES ('load_q', 'y', 'load_q', 'y', 'R');
 INSERT INTO programa VALUES ('load_q', 'z', 'load_q', 'z', 'R');
+INSERT INTO programa VALUES ('load_q', ' ', 'load_q', ' ', 'R');
 INSERT INTO programa VALUES ('load_q', 'X', 'load_q', 'X', 'R');
 INSERT INTO programa VALUES ('load_q', 'B', 'search_X', 'q', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -610,6 +630,7 @@ INSERT INTO programa VALUES ('load_r', 'w', 'load_r', 'w', 'R');
 INSERT INTO programa VALUES ('load_r', 'x', 'load_r', 'x', 'R');
 INSERT INTO programa VALUES ('load_r', 'y', 'load_r', 'y', 'R');
 INSERT INTO programa VALUES ('load_r', 'z', 'load_r', 'z', 'R');
+INSERT INTO programa VALUES ('load_r', ' ', 'load_r', ' ', 'R');
 INSERT INTO programa VALUES ('load_r', 'X', 'load_r', 'X', 'R');
 INSERT INTO programa VALUES ('load_r', 'B', 'search_X', 'r', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -639,6 +660,7 @@ INSERT INTO programa VALUES ('load_s', 'w', 'load_s', 'w', 'R');
 INSERT INTO programa VALUES ('load_s', 'x', 'load_s', 'x', 'R');
 INSERT INTO programa VALUES ('load_s', 'y', 'load_s', 'y', 'R');
 INSERT INTO programa VALUES ('load_s', 'z', 'load_s', 'z', 'R');
+INSERT INTO programa VALUES ('load_s', ' ', 'load_s', ' ', 'R');
 INSERT INTO programa VALUES ('load_s', 'X', 'load_s', 'X', 'R');
 INSERT INTO programa VALUES ('load_s', 'B', 'search_X', 's', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -668,6 +690,7 @@ INSERT INTO programa VALUES ('load_t', 'w', 'load_t', 'w', 'R');
 INSERT INTO programa VALUES ('load_t', 'x', 'load_t', 'x', 'R');
 INSERT INTO programa VALUES ('load_t', 'y', 'load_t', 'y', 'R');
 INSERT INTO programa VALUES ('load_t', 'z', 'load_t', 'z', 'R');
+INSERT INTO programa VALUES ('load_t', ' ', 'load_t', ' ', 'R');
 INSERT INTO programa VALUES ('load_t', 'X', 'load_t', 'X', 'R');
 INSERT INTO programa VALUES ('load_t', 'B', 'search_X', 't', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -697,6 +720,7 @@ INSERT INTO programa VALUES ('load_u', 'w', 'load_u', 'w', 'R');
 INSERT INTO programa VALUES ('load_u', 'x', 'load_u', 'x', 'R');
 INSERT INTO programa VALUES ('load_u', 'y', 'load_u', 'y', 'R');
 INSERT INTO programa VALUES ('load_u', 'z', 'load_u', 'z', 'R');
+INSERT INTO programa VALUES ('load_u', ' ', 'load_u', ' ', 'R');
 INSERT INTO programa VALUES ('load_u', 'X', 'load_u', 'X', 'R');
 INSERT INTO programa VALUES ('load_u', 'B', 'search_X', 'u', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -726,6 +750,7 @@ INSERT INTO programa VALUES ('load_v', 'w', 'load_v', 'w', 'R');
 INSERT INTO programa VALUES ('load_v', 'x', 'load_v', 'x', 'R');
 INSERT INTO programa VALUES ('load_v', 'y', 'load_v', 'y', 'R');
 INSERT INTO programa VALUES ('load_v', 'z', 'load_v', 'z', 'R');
+INSERT INTO programa VALUES ('load_v', ' ', 'load_v', ' ', 'R');
 INSERT INTO programa VALUES ('load_v', 'X', 'load_v', 'X', 'R');
 INSERT INTO programa VALUES ('load_v', 'B', 'search_X', 'v', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -755,6 +780,7 @@ INSERT INTO programa VALUES ('load_w', 'w', 'load_w', 'w', 'R');
 INSERT INTO programa VALUES ('load_w', 'x', 'load_w', 'x', 'R');
 INSERT INTO programa VALUES ('load_w', 'y', 'load_w', 'y', 'R');
 INSERT INTO programa VALUES ('load_w', 'z', 'load_w', 'z', 'R');
+INSERT INTO programa VALUES ('load_w', ' ', 'load_w', ' ', 'R');
 INSERT INTO programa VALUES ('load_w', 'X', 'load_w', 'X', 'R');
 INSERT INTO programa VALUES ('load_w', 'B', 'search_X', 'w', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -784,6 +810,7 @@ INSERT INTO programa VALUES ('load_x', 'w', 'load_x', 'w', 'R');
 INSERT INTO programa VALUES ('load_x', 'x', 'load_x', 'x', 'R');
 INSERT INTO programa VALUES ('load_x', 'y', 'load_x', 'y', 'R');
 INSERT INTO programa VALUES ('load_x', 'z', 'load_x', 'z', 'R');
+INSERT INTO programa VALUES ('load_x', ' ', 'load_x', ' ', 'R');
 INSERT INTO programa VALUES ('load_x', 'X', 'load_x', 'X', 'R');
 INSERT INTO programa VALUES ('load_x', 'B', 'search_X', 'x', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -813,6 +840,7 @@ INSERT INTO programa VALUES ('load_y', 'w', 'load_y', 'w', 'R');
 INSERT INTO programa VALUES ('load_y', 'x', 'load_y', 'x', 'R');
 INSERT INTO programa VALUES ('load_y', 'y', 'load_y', 'y', 'R');
 INSERT INTO programa VALUES ('load_y', 'z', 'load_y', 'z', 'R');
+INSERT INTO programa VALUES ('load_y', ' ', 'load_y', ' ', 'R');
 INSERT INTO programa VALUES ('load_y', 'X', 'load_y', 'X', 'R');
 INSERT INTO programa VALUES ('load_y', 'B', 'search_X', 'y', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
@@ -842,8 +870,39 @@ INSERT INTO programa VALUES ('load_z', 'w', 'load_z', 'w', 'R');
 INSERT INTO programa VALUES ('load_z', 'x', 'load_z', 'x', 'R');
 INSERT INTO programa VALUES ('load_z', 'y', 'load_z', 'y', 'R');
 INSERT INTO programa VALUES ('load_z', 'z', 'load_z', 'z', 'R');
+INSERT INTO programa VALUES ('load_z', ' ', 'load_z', ' ', 'R');
 INSERT INTO programa VALUES ('load_z', 'X', 'load_z', 'X', 'R');
 INSERT INTO programa VALUES ('load_z', 'B', 'search_X', 'z', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
+
+INSERT INTO programa VALUES ('load_ ', 'a', 'load_ ', 'a', 'R');
+INSERT INTO programa VALUES ('load_ ', 'b', 'load_ ', 'b', 'R');
+INSERT INTO programa VALUES ('load_ ', 'c', 'load_ ', 'c', 'R');
+INSERT INTO programa VALUES ('load_ ', 'd', 'load_ ', 'd', 'R');
+INSERT INTO programa VALUES ('load_ ', 'e', 'load_ ', 'e', 'R');
+INSERT INTO programa VALUES ('load_ ', 'f', 'load_ ', 'f', 'R');
+INSERT INTO programa VALUES ('load_ ', 'g', 'load_ ', 'g', 'R');
+INSERT INTO programa VALUES ('load_ ', 'h', 'load_ ', 'h', 'R');
+INSERT INTO programa VALUES ('load_ ', 'i', 'load_ ', 'i', 'R');
+INSERT INTO programa VALUES ('load_ ', 'j', 'load_ ', 'j', 'R');
+INSERT INTO programa VALUES ('load_ ', 'k', 'load_ ', 'k', 'R');
+INSERT INTO programa VALUES ('load_ ', 'l', 'load_ ', 'l', 'R');
+INSERT INTO programa VALUES ('load_ ', 'm', 'load_ ', 'm', 'R');
+INSERT INTO programa VALUES ('load_ ', 'n', 'load_ ', 'n', 'R');
+INSERT INTO programa VALUES ('load_ ', 'o', 'load_ ', 'o', 'R');
+INSERT INTO programa VALUES ('load_ ', 'p', 'load_ ', 'p', 'R');
+INSERT INTO programa VALUES ('load_ ', 'q', 'load_ ', 'q', 'R');
+INSERT INTO programa VALUES ('load_ ', 'r', 'load_ ', 'r', 'R');
+INSERT INTO programa VALUES ('load_ ', 's', 'load_ ', 's', 'R');
+INSERT INTO programa VALUES ('load_ ', 't', 'load_ ', 't', 'R');
+INSERT INTO programa VALUES ('load_ ', 'u', 'load_ ', 'u', 'R');
+INSERT INTO programa VALUES ('load_ ', 'v', 'load_ ', 'v', 'R');
+INSERT INTO programa VALUES ('load_ ', 'w', 'load_ ', 'w', 'R');
+INSERT INTO programa VALUES ('load_ ', 'x', 'load_ ', 'x', 'R');
+INSERT INTO programa VALUES ('load_ ', 'y', 'load_ ', 'y', 'R');
+INSERT INTO programa VALUES ('load_ ', 'z', 'load_ ', 'z', 'R');
+INSERT INTO programa VALUES ('load_ ', ' ', 'load_ ', ' ', 'R');
+INSERT INTO programa VALUES ('load_ ', 'X', 'load_ ', 'X', 'R');
+INSERT INTO programa VALUES ('load_ ', 'B', 'search_X', ' ', 'L');  --PEGA EL VALOR Y SE VA PARA LA IZQUIERDA
 
 --BUSCA ALGUNA X (CORRESPONDEN AL STRING ORIGINAL);
 INSERT INTO programa VALUES ('search_X', 'a', 'search_X', 'a', 'L');
@@ -872,6 +931,7 @@ INSERT INTO programa VALUES ('search_X', 'w', 'search_X', 'w', 'L');
 INSERT INTO programa VALUES ('search_X', 'x', 'search_X', 'x', 'L');
 INSERT INTO programa VALUES ('search_X', 'y', 'search_X', 'y', 'L');
 INSERT INTO programa VALUES ('search_X', 'z', 'search_X', 'z', 'L');
+INSERT INTO programa VALUES ('search_X', ' ', 'search_X', ' ', 'L');
 INSERT INTO programa VALUES ('search_X', 'X', 'load_next', 'X', 'L'); --CAMBIA DE ESTADO PARA VER SI ENCUENTRA OTRO CARACTER PARA COPIAR
 
 INSERT INTO programa VALUES ('load_next', 'a', 'load_a', 'X', 'R');
@@ -900,6 +960,36 @@ INSERT INTO programa VALUES ('load_next', 'w', 'load_w', 'X', 'R');
 INSERT INTO programa VALUES ('load_next', 'x', 'load_x', 'X', 'R');
 INSERT INTO programa VALUES ('load_next', 'y', 'load_y', 'X', 'R');
 INSERT INTO programa VALUES ('load_next', 'z', 'load_z', 'X', 'R');
-INSERT INTO programa VALUES ('load_next', 'B', 'finish', 'B', 'R');
+INSERT INTO programa VALUES ('load_next', ' ', 'load_ ', 'X', 'R');
+INSERT INTO programa VALUES ('load_next', 'B', 'clear_X', 'B', 'R');
 INSERT INTO programa VALUES ('load_next', 'X', 'load_next', 'X', 'L');
+
+INSERT INTO programa VALUES ('clear_X', 'a', 'finish', 'a', 'R');
+INSERT INTO programa VALUES ('clear_X', 'b', 'finish', 'b', 'R');
+INSERT INTO programa VALUES ('clear_X', 'c', 'finish', 'c', 'R');
+INSERT INTO programa VALUES ('clear_X', 'd', 'finish', 'd', 'R');
+INSERT INTO programa VALUES ('clear_X', 'e', 'finish', 'e', 'R');
+INSERT INTO programa VALUES ('clear_X', 'f', 'finish', 'f', 'R');
+INSERT INTO programa VALUES ('clear_X', 'g', 'finish', 'g', 'R');
+INSERT INTO programa VALUES ('clear_X', 'h', 'finish', 'h', 'R');
+INSERT INTO programa VALUES ('clear_X', 'i', 'finish', 'i', 'R');
+INSERT INTO programa VALUES ('clear_X', 'j', 'finish', 'j', 'R');
+INSERT INTO programa VALUES ('clear_X', 'k', 'finish', 'k', 'R');
+INSERT INTO programa VALUES ('clear_X', 'l', 'finish', 'l', 'R');
+INSERT INTO programa VALUES ('clear_X', 'm', 'finish', 'm', 'R');
+INSERT INTO programa VALUES ('clear_X', 'n', 'finish', 'n', 'R');
+INSERT INTO programa VALUES ('clear_X', 'o', 'finish', 'o', 'R');
+INSERT INTO programa VALUES ('clear_X', 'p', 'finish', 'p', 'R');
+INSERT INTO programa VALUES ('clear_X', 'q', 'finish', 'q', 'R');
+INSERT INTO programa VALUES ('clear_X', 'r', 'finish', 'r', 'R');
+INSERT INTO programa VALUES ('clear_X', 's', 'finish', 's', 'R');
+INSERT INTO programa VALUES ('clear_X', 't', 'finish', 't', 'R');
+INSERT INTO programa VALUES ('clear_X', 'u', 'finish', 'u', 'R');
+INSERT INTO programa VALUES ('clear_X', 'v', 'finish', 'v', 'R');
+INSERT INTO programa VALUES ('clear_X', 'w', 'finish', 'w', 'R');
+INSERT INTO programa VALUES ('clear_X', 'x', 'finish', 'x', 'R');
+INSERT INTO programa VALUES ('clear_X', 'y', 'finish', 'y', 'R');
+INSERT INTO programa VALUES ('clear_X', 'z', 'finish', 'z', 'R');
+INSERT INTO programa VALUES ('clear_X', ' ', 'finish', ' ', 'R');
+INSERT INTO programa VALUES ('clear_X', 'X', 'clear_X', 'B', 'R');
 
