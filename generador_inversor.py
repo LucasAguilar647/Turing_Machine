@@ -1,9 +1,9 @@
-letras = [chr(c) for c in range(ord('a'), ord('z') + 1)]
+letras = [chr(c) for c in range(ord('a'), ord('z') + 1)] + [' ']
 
 
 with open("Programa_Inversor_Completo.sql", "w") as f:
     f.write("-- Programa que invierte la palabra y la copia al final con alfabeto completo (a–z)\n")
-    f.write("DELETE FROM alfabeto;")
+    f.write("DELETE FROM alfabeto;\n")
     f.write("INSERT INTO alfabeto (simbolo) VALUES\n")
     for i, l in enumerate(letras + ['X', 'B']):
         end = ',' if i < len(letras + ['X', 'B']) - 1 else ';'
@@ -38,7 +38,11 @@ with open("Programa_Inversor_Completo.sql", "w") as f:
 
     for l in letras:
          f.write(f"INSERT INTO programa VALUES ('load_next', '{l}', 'load_{l}', 'X', 'R');\n")
-    f.write(f"INSERT INTO programa VALUES ('load_next', 'B', 'finish', 'B', 'R');\n")
+    f.write(f"INSERT INTO programa VALUES ('load_next', 'B', 'clear_X', 'B', 'R');\n")
     f.write(f"INSERT INTO programa VALUES ('load_next', 'X', 'load_next', 'X', 'L');\n\n")
+
+    for l in letras:
+         f.write(f"INSERT INTO programa VALUES ('clear_X', '{l}', 'finish', '{l}', 'R');\n")
+    f.write(f"INSERT INTO programa VALUES ('clear_X', 'X', 'clear_X', 'B', 'R');\n\n")
 
 print("Archivo 'Programa_Inversor_Completo.sql' generado correctamente.")
